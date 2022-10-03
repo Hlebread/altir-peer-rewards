@@ -1,7 +1,7 @@
 import { CardStyleInterpolators } from '@react-navigation/stack';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
-import { AddRewardScreen } from '../screens';
-import RewardsScreen from '../screens/Rewards/Rewards';
+
+import { AddRewardScreen, RewardsScreen } from '../screens';
 import { AppRoutes } from '../types';
 
 export const ROUTES = [
