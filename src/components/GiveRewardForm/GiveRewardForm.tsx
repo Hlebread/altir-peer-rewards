@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useNavigation } from '@react-navigation/native';
 
 import { THEME } from '../../constants';
 import { giveRewardFormValidationSchema } from '../../validations';
@@ -28,6 +29,7 @@ const GiveRewardForm = () => {
   const dispatch = useAppDispatch();
   const sender = useAppSelector(selectUser) as User;
   const users = useAppSelector(selectAllUsers);
+  const { goBack } = useNavigation();
 
   const {
     control,
@@ -69,8 +71,9 @@ const GiveRewardForm = () => {
 
       dispatch(addReward(newRewardEntry));
       reset();
+      goBack();
     },
-    [dispatch, reset, sender, setError, users],
+    [dispatch, goBack, reset, sender, setError, users],
   );
 
   return (
@@ -147,7 +150,6 @@ export default GiveRewardForm;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: THEME.palette.background.dark,
     padding: THEME.spacing.lg,
   },
   title: {

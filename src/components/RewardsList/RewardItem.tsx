@@ -6,13 +6,14 @@ import { Reward } from '../../interfaces';
 
 import { Typography } from '../Typography';
 import { Avatar } from '../Avatar';
+import { getDateDistance } from '../../helpers';
 
 export interface RewardItemProps {
   data: Reward;
 }
 
 const RewardItem: FC<RewardItemProps> = ({ data }) => {
-  const { sender, recipient, message } = data;
+  const { sender, recipient, message, dt } = data;
 
   return (
     <View style={styles.container}>
@@ -25,7 +26,7 @@ const RewardItem: FC<RewardItemProps> = ({ data }) => {
           <Typography>
             {recipient?.displayName} rewarded by {sender.displayName}
           </Typography>
-          <Typography>Feb 1, 2021</Typography>
+          <Typography style={styles.date}>{getDateDistance(dt)}</Typography>
         </View>
       </View>
     </View>
@@ -48,5 +49,8 @@ const styles = StyleSheet.create({
   },
   details: {
     marginTop: THEME.spacing.md,
+  },
+  date: {
+    marginTop: THEME.spacing.sm,
   },
 });

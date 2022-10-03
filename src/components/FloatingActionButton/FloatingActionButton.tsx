@@ -29,6 +29,8 @@ const styles = StyleSheet.create({
     bottom: THEME.spacing.lg,
     backgroundColor: THEME.palette.background.dark,
     borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
     color: THEME.palette.primary.light,

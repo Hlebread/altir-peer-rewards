@@ -1,43 +1,39 @@
-import React, { type PropsWithChildren } from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { Provider as StoreProvider } from 'react-redux';
+import { FloatingActionButton } from './components/FloatingActionButton';
+import GiveRewardForm from './components/GiveRewardForm/GiveRewardForm';
 
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Header } from './components/Header';
-import StatusBar from './components/StatusBar/StatusBar';
-import { COLORS } from './constants';
+import RootNavigator from './navigation/RootNavigator';
+
+import { store } from './store';
+import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
+  const [state, setState] = useState('');
+
   return (
-    <SafeAreaView>
-      <StatusBar backgroundColor="#5E8D48" barStyle="dark-content" />
-      <Header />
-    </SafeAreaView>
+    <StoreProvider store={store}>
+      {/* <GestureHandlerRootView style={styles.gestureHandlerView}> */}
+      <SafeAreaProvider>
+        <NavigationContainer>
+          <Header />
+
+          <RootNavigator />
+
+
+        </NavigationContainer>
+      </SafeAreaProvider>
+      {/* </GestureHandlerRootView> */}
+    </StoreProvider>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  gestureHandlerView: {
+    flex: 1,
   },
 });
 
