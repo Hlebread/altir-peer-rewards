@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Button, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
@@ -16,6 +16,7 @@ import {
 
 import { Typography } from '../Typography';
 import { TextField } from '../TextField';
+import Button from '../Button/Button';
 
 const defaultValues: RewardEntry = {
   recipient: '',
@@ -135,7 +136,9 @@ const GiveRewardForm = () => {
         />
       </View>
 
-      <Button title="Give" onPress={handleSubmit(onSubmit)} />
+      <View style={styles.buttonContainer}>
+        <Button title="Give" onPress={handleSubmit(onSubmit)} />
+      </View>
     </View>
   );
 };
@@ -157,5 +160,10 @@ const styles = StyleSheet.create({
   messageInput: {
     minHeight: 100,
     paddingVertical: SPACING.sm,
+  },
+  buttonContainer: {
+    alignItems: 'center',
+    marginTop: SPACING.lg,
+    paddingHorizontal: SPACING.sm,
   },
 });
