@@ -1,14 +1,16 @@
-import { Platform, StyleSheet, View } from 'react-native';
 import React from 'react';
-import { COLORS, SPACING } from '../../constants';
-import { Avatar } from '../Avatar';
-import Typography from '../Typography/Typography';
+import { Platform, StyleSheet, View } from 'react-native';
+
+import { THEME } from '../../constants';
 import {
   selectGivenAmount,
   selectRecievedAmount,
   selectUser,
   useAppSelector,
 } from '../../store';
+
+import { Avatar } from '../Avatar';
+import { Typography } from '../Typography';
 
 const Header = () => {
   const user = useAppSelector(selectUser);
@@ -42,9 +44,9 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    padding: SPACING.lg,
-    backgroundColor: COLORS.primary.dark,
-    paddingTop: Platform.OS === 'ios' ? 50 : SPACING.lg,
+    padding: THEME.spacing.lg,
+    backgroundColor: THEME.palette.background.main,
+    paddingTop: Platform.OS === 'ios' ? 50 : THEME.spacing.lg,
   },
   avatar: {
     width: 100,
@@ -52,10 +54,10 @@ const styles = StyleSheet.create({
   },
   content: {
     justifyContent: 'center',
-    marginLeft: SPACING.md,
+    marginLeft: THEME.spacing.md,
   },
   contentText: {
-    marginTop: SPACING.sm,
+    marginTop: THEME.spacing.sm,
     flexDirection: 'row',
   },
 });

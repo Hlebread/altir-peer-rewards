@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TextProps, View } from 'react-native';
 import React, { FC } from 'react';
-import { COLORS, FONT_SIZE, FONT_WEIGHT } from '../../constants';
+import { THEME } from '../../constants';
 
 export interface TypographyProps extends TextProps {
   variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -35,43 +35,43 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: FONT_SIZE.md,
-    color: COLORS.secondary.medium,
-    fontWeight: FONT_WEIGHT.light,
+    fontSize: THEME.font.size.md,
+    color: THEME.palette.secondary.main,
+    fontWeight: THEME.font.weight.light,
   },
   h1: {
-    color: COLORS.secondary.dark,
-    fontSize: FONT_SIZE.xl,
-    fontWeight: FONT_WEIGHT.bold,
+    color: THEME.palette.secondary.dark,
+    fontSize: THEME.font.size.xl,
+    fontWeight: THEME.font.weight.bold,
   },
   h2: {
-    color: COLORS.secondary.dark,
-    fontSize: FONT_SIZE.lg,
-    fontWeight: FONT_WEIGHT.bold,
+    color: THEME.palette.secondary.dark,
+    fontSize: THEME.font.size.lg,
+    fontWeight: THEME.font.weight.bold,
   },
   h3: {
-    color: COLORS.secondary.dark,
-    fontSize: FONT_SIZE.md,
-    fontWeight: FONT_WEIGHT.bold,
+    color: THEME.palette.secondary.dark,
+    fontSize: THEME.font.size.md,
+    fontWeight: THEME.font.weight.bold,
   },
   h4: {
-    color: COLORS.secondary.dark,
-    fontSize: FONT_SIZE.md,
-    fontWeight: FONT_WEIGHT.medium,
+    color: THEME.palette.secondary.dark,
+    fontSize: THEME.font.size.md,
+    fontWeight: THEME.font.weight.medium,
   },
   h5: {
-    color: COLORS.secondary.dark,
-    fontSize: FONT_SIZE.md,
-    fontWeight: FONT_WEIGHT.medium,
+    color: THEME.palette.secondary.dark,
+    fontSize: THEME.font.size.md,
+    fontWeight: THEME.font.weight.medium,
   },
   h6: {
-    color: COLORS.secondary.dark,
-    fontSize: FONT_SIZE.md,
-    fontWeight: FONT_WEIGHT.semibold,
+    color: THEME.palette.secondary.dark,
+    fontSize: THEME.font.size.md,
+    fontWeight: THEME.font.weight.semibold,
   },
   error: {
-    color: COLORS.error,
-    fontSize: FONT_SIZE.md,
-    fontWeight: FONT_WEIGHT.regular,
+    color: THEME.palette.error,
+    fontSize: THEME.font.size.md,
+    fontWeight: THEME.font.weight.regular,
   },
 });

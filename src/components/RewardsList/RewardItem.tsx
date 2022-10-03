@@ -1,9 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native';
 import React, { FC } from 'react';
-import { Avatar } from '../Avatar';
-import { SPACING } from '../../constants';
-import { Typography } from '../Typography';
+import { StyleSheet, View } from 'react-native';
+
+import { THEME } from '../../constants';
 import { Reward } from '../../interfaces';
+
+import { Typography } from '../Typography';
+import { Avatar } from '../Avatar';
 
 export interface RewardItemProps {
   data: Reward;
@@ -35,17 +37,16 @@ export default RewardItem;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    paddingHorizontal: SPACING.sm,
-    paddingRight: SPACING.lg,
-    margin: SPACING.lg,
-    // backgroundColor: 'red',
+    paddingHorizontal: THEME.spacing.sm,
+    paddingRight: THEME.spacing.lg,
+    margin: THEME.spacing.lg,
   },
   content: {
-    marginHorizontal: SPACING.md,
-    paddingRight: SPACING.lg,
+    marginHorizontal: THEME.spacing.md,
+    paddingRight: THEME.spacing.lg,
     overflow: 'hidden',
   },
   details: {
-    marginTop: SPACING.md,
+    marginTop: THEME.spacing.md,
   },
 });

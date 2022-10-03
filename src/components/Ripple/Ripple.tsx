@@ -15,6 +15,8 @@ import {
   LongPressGestureHandlerGestureEvent,
 } from 'react-native-gesture-handler';
 
+import { THEME } from '../../constants';
+
 export interface RippleProps extends ViewProps {
   onTap?: () => void;
   color?: string;
@@ -27,7 +29,7 @@ const Ripple: FC<RippleProps> = ({
   onTap,
   duration = 800,
   opacity = 1,
-  color = 'rgb(0,0,0)',
+  color = THEME.palette.common.black,
   style,
   ...props
 }) => {

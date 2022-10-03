@@ -2,7 +2,7 @@ import { StyleSheet, TextInput, TextInputProps, View } from 'react-native';
 import React, { FC } from 'react';
 
 import { Typography } from '../Typography';
-import { COLORS, FONT_WEIGHT, SPACING } from '../../constants';
+import { THEME } from '../../constants';
 
 export interface TextFieldProps extends TextInputProps {
   label?: string;
@@ -47,7 +47,7 @@ const TextField: FC<TextFieldProps> = ({
         ]}>
         <TextInput
           style={styles.input}
-          placeholderTextColor={COLORS.primary.dark}
+          placeholderTextColor={THEME.palette.primary.dark}
           onChangeText={onTextChangeHandler}
           {...props}
         />
@@ -66,37 +66,37 @@ export default TextField;
 
 const styles = StyleSheet.create({
   container: {
-    padding: SPACING.sm,
+    padding: THEME.spacing.sm,
     borderRadius: 10,
   },
   label: {
-    marginLeft: SPACING.sm,
-    marginBottom: SPACING.sm,
-    fontWeight: FONT_WEIGHT.semibold,
+    marginLeft: THEME.spacing.sm,
+    marginBottom: THEME.spacing.sm,
+    fontWeight: THEME.font.weight.semibold,
   },
   labelError: {
-    color: COLORS.error,
+    color: THEME.palette.error,
   },
   inputContainer: {
     minHeight: 40,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: COLORS.primary.dark,
+    borderColor: THEME.palette.primary.main,
   },
   inputContainerError: {
-    borderColor: COLORS.error,
+    borderColor: THEME.palette.error,
   },
   input: {
     flex: 1,
-    paddingHorizontal: SPACING.sm,
-    color: COLORS.primary.dark,
+    paddingHorizontal: THEME.spacing.sm,
+    color: THEME.palette.primary.dark,
   },
   helperText: {
-    marginLeft: SPACING.sm,
-    marginTop: SPACING.sm,
+    marginLeft: THEME.spacing.sm,
+    marginTop: THEME.spacing.sm,
   },
   helperTextError: {
-    color: COLORS.error,
+    color: THEME.palette.error,
   },
   fullWidth: {
     width: '100%',

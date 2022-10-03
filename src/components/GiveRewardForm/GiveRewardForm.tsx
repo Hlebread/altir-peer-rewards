@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import { COLORS, SPACING } from '../../constants';
+import { THEME } from '../../constants';
 import { giveRewardFormValidationSchema } from '../../validations';
 import { Reward, RewardEntry, User } from '../../interfaces';
 import {
@@ -147,23 +147,23 @@ export default GiveRewardForm;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#000',
-    padding: SPACING.lg,
+    backgroundColor: THEME.palette.background.dark,
+    padding: THEME.spacing.lg,
   },
   title: {
     textAlign: 'center',
-    color: COLORS.primary.light,
+    color: THEME.palette.common.white,
   },
   inputContainer: {
-    marginVertical: SPACING.xs,
+    marginVertical: THEME.spacing.xs,
   },
   messageInput: {
     minHeight: 100,
-    paddingVertical: SPACING.sm,
+    paddingVertical: THEME.spacing.sm,
   },
   buttonContainer: {
     alignItems: 'center',
-    marginTop: SPACING.lg,
-    paddingHorizontal: SPACING.sm,
+    marginTop: THEME.spacing.lg,
+    paddingHorizontal: THEME.spacing.sm,
   },
 });

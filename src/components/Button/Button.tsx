@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useState } from 'react';
 import { LayoutChangeEvent, StyleSheet, View } from 'react-native';
 
-import { COLORS, SPACING } from '../../constants';
+import { THEME } from '../../constants';
 
 import { Ripple } from '../Ripple';
 import { Typography } from '../Typography';
@@ -41,14 +41,14 @@ export default Button;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.primary.light,
-    padding: SPACING.md,
+    backgroundColor: THEME.palette.background.light,
+    padding: THEME.spacing.md,
     width: '100%',
     alignItems: 'center',
     borderRadius: 10,
   },
   title: {
-    color: COLORS.secondary.dark,
+    color: THEME.palette.common.black,
     textTransform: 'uppercase',
   },
   ripple: {

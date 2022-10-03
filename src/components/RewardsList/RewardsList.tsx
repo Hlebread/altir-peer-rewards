@@ -1,8 +1,10 @@
-import { FlatList, StyleSheet } from 'react-native';
 import React, { FC } from 'react';
+import { FlatList, StyleSheet } from 'react-native';
+
 import { Reward } from '../../interfaces';
+import { THEME } from '../../constants';
+
 import RewardItem from './RewardItem';
-import { COLORS } from '../../constants';
 
 export interface RewardsListProps {
   data: Reward[];
@@ -21,6 +23,6 @@ export default RewardsList;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.primary.light,
+    backgroundColor: THEME.palette.background.light,
   },
 });
