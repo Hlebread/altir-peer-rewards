@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 import React, { FC } from 'react';
 
 import { Button, ButtonProps } from '../Button';
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     right: THEME.spacing.lg,
-    bottom: THEME.spacing.lg,
+    bottom: Platform.OS === 'ios' ? THEME.spacing.lg * 2 : THEME.spacing.lg,
     backgroundColor: THEME.palette.background.dark,
     borderRadius: 100,
     alignItems: 'center',

@@ -1,38 +1,38 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { StyleSheet, Text, View } from 'react-native';
+// import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { StyleSheet } from 'react-native';
 import { THEME } from '../constants';
 import { AppRoutes } from '../types';
 
 import { ROUTES } from './routes';
 
-const styles = StyleSheet.create({
-  tabBarLabelStyle: {
-    fontSize: THEME.spacing.md,
-    textTransform: 'capitalize',
-    fontWeight: THEME.font.weight.bold,
-  },
-  tabBarStyle: {
-    width: '100%',
-    overflow: 'hidden',
-    borderTopLeftRadius: THEME.spacing.lg,
-    borderTopRightRadius: THEME.spacing.lg,
-    backgroundColor: THEME.palette.secondary.light,
-    elevation: 0,
-  },
-  tabBarIndicatorStyle: {
-    height: '100%',
-    backgroundColor: THEME.palette.primary.light,
-  },
-  button: {
-    position: 'absolute',
-    bottom: THEME.spacing.lg,
-    right: THEME.spacing.lg,
-  },
-});
+// const styles = StyleSheet.create({
+//   tabBarLabelStyle: {
+//     fontSize: THEME.spacing.md,
+//     textTransform: 'capitalize',
+//     fontWeight: THEME.font.weight.bold,
+//   },
+//   tabBarStyle: {
+//     width: '100%',
+//     overflow: 'hidden',
+//     borderTopLeftRadius: THEME.spacing.lg,
+//     borderTopRightRadius: THEME.spacing.lg,
+//     backgroundColor: THEME.palette.secondary.light,
+//     elevation: 0,
+//   },
+//   tabBarIndicatorStyle: {
+//     height: '100%',
+//     backgroundColor: THEME.palette.primary.light,
+//   },
+//   button: {
+//     position: 'absolute',
+//     bottom: THEME.spacing.lg,
+//     right: THEME.spacing.lg,
+//   },
+// });
 
-const Tab = createMaterialTopTabNavigator();
+// const Tab = createMaterialTopTabNavigator();
 
 // const navigationOptions = {
 //   headerShown: false,
