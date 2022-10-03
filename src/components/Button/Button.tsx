@@ -1,17 +1,31 @@
-import React, { FC, useCallback, useState } from 'react';
-import { LayoutChangeEvent, StyleSheet, View } from 'react-native';
+import React, { FC, PropsWithChildren, useCallback, useState } from 'react';
+import {
+  LayoutChangeEvent,
+  StyleProp,
+  StyleSheet,
+  View,
+  ViewStyle,
+} from 'react-native';
 
 import { THEME } from '../../constants';
 
 import { Ripple } from '../Ripple';
-import { Typography } from '../Typography';
+import { Typography, TypographyProps } from '../Typography';
 
-export interface ButtonProps {
-  title?: string;
+export interface ButtonProps extends PropsWithChildren {
   onPress?: () => void;
+  style?: StyleProp<ViewStyle>;
+  titleStyle?: TypographyProps['style'];
+  rippleColor?: string;
 }
 
-const Button: FC<ButtonProps> = ({ title, onPress }) => {
+const Button: FC<ButtonProps> = ({
+  children,
+  onPress,
+  rippleColor,
+  style,
+  titleStyle,
+}) => {
   const [rippleSize, setRippleSize] = useState(0);
 
   const onLayout = useCallback(
@@ -24,12 +38,13 @@ const Button: FC<ButtonProps> = ({ title, onPress }) => {
   );
 
   return (
-    <View onLayout={onLayout} style={styles.container}>
-      <Typography variant="h4" style={styles.title}>
-        {title}
+    <View onLayout={onLayout} style={[styles.container, style]}>
+      <Typography variant="h4" style={[styles.title, titleStyle]}>
+        {children}
       </Typography>
       <Ripple
         onTap={onPress}
+        color={rippleColor}
         style={[styles.ripple, { width: rippleSize, height: rippleSize }]}
         opacity={0.4}
       />
@@ -46,6 +61,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     borderRadius: 10,
+    overflow: 'hidden',
   },
   title: {
     color: THEME.palette.common.black,

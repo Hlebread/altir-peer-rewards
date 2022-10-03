@@ -16,7 +16,7 @@ import {
 
 import { Typography } from '../Typography';
 import { TextField } from '../TextField';
-import Button from '../Button/Button';
+import { Button } from '../Button';
 
 const defaultValues: RewardEntry = {
   recipient: '',
@@ -137,7 +137,7 @@ const GiveRewardForm = () => {
       </View>
 
       <View style={styles.buttonContainer}>
-        <Button title="Give" onPress={handleSubmit(onSubmit)} />
+        <Button onPress={handleSubmit(onSubmit)}>Give</Button>
       </View>
     </View>
   );
