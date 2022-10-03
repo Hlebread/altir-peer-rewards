@@ -3,10 +3,17 @@ import React from 'react';
 import { COLORS, SPACING } from '../../constants';
 import { Avatar } from '../Avatar';
 import Typography from '../Typography/Typography';
-import { selectUser, useAppSelector } from '../../store';
+import {
+  selectGivenAmount,
+  selectRecievedAmount,
+  selectUser,
+  useAppSelector,
+} from '../../store';
 
 const Header = () => {
   const user = useAppSelector(selectUser);
+  const given = useAppSelector(selectGivenAmount);
+  const recieved = useAppSelector(selectRecievedAmount);
 
   return (
     <View style={styles.container}>
@@ -21,9 +28,9 @@ const Header = () => {
         <Typography variant="h2">{user?.displayName}</Typography>
         <View style={styles.contentText}>
           <Typography>Given </Typography>
-          <Typography variant="h6">$100</Typography>
+          <Typography variant="h6">${given}</Typography>
           <Typography> / Recieved </Typography>
-          <Typography variant="h6">$100</Typography>
+          <Typography variant="h6">${recieved}</Typography>
         </View>
       </View>
     </View>

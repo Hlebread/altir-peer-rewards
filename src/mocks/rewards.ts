@@ -7,7 +7,7 @@ export const REWARDS_MOCK: Reward[] = [
     id: 'r1',
     recipient: USERS_MOCK[0],
     sender: USERS_MOCK[1],
-    amount: 100,
+    amount: 145,
     dt: Date.now(),
     message: 'Hi',
   },

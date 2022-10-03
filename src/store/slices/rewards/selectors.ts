@@ -13,3 +13,23 @@ export const selectUserRewards = createSelector(selectSelf, state =>
     item => item.recipient.id === state.authentication.user?.id,
   ),
 );
+
+export const selectGivenAmount = createSelector(selectSelf, state =>
+  state.rewards.rewards.reduce(
+    (accumulator, current) =>
+      current.sender.displayName === state.authentication.user?.displayName
+        ? accumulator + current.amount
+        : accumulator,
+    0,
+  ),
+);
+
+export const selectRecievedAmount = createSelector(selectSelf, state =>
+  state.rewards.rewards.reduce(
+    (accumulator, current) =>
+      current.recipient.displayName === state.authentication.user?.displayName
+        ? accumulator + current.amount
+        : accumulator,
+    0,
+  ),
+);

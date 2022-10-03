@@ -9,6 +9,7 @@ export interface TextFieldProps extends TextInputProps {
   error?: boolean;
   helperText?: string;
   number?: boolean;
+  fullWidth?: boolean;
 }
 
 const TextField: FC<TextFieldProps> = ({
@@ -16,6 +17,7 @@ const TextField: FC<TextFieldProps> = ({
   error,
   helperText,
   number,
+  fullWidth = true,
   onChangeText,
   style,
   ...props
@@ -31,7 +33,7 @@ const TextField: FC<TextFieldProps> = ({
   };
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, fullWidth && styles.fullWidth]}>
       {label && (
         <Typography style={[styles.label, error && styles.labelError]}>
           {label}
@@ -95,5 +97,8 @@ const styles = StyleSheet.create({
   },
   helperTextError: {
     color: COLORS.error,
+  },
+  fullWidth: {
+    width: '100%',
   },
 });
