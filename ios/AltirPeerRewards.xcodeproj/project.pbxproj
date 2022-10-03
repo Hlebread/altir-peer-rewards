@@ -8,28 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* AltirPeerRewardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AltirPeerRewardsTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-AltirPeerRewards.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-AltirPeerRewards.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a */; };
+		49A03438F6EBBC56C05C0A97 /* libPods-AltirPeerRewards.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB3D880178BD97C0602B87 /* libPods-AltirPeerRewards.a */; };
+		59C252D844A80F5ADCE1A4EA /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB8743AD78C1E5019C307F /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		F7DFED6928EB0076000976CE /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED5928EB0076000976CE /* Fontisto.ttf */; };
-		F7DFED6A28EB0076000976CE /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED5A28EB0076000976CE /* Octicons.ttf */; };
-		F7DFED6B28EB0076000976CE /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED5B28EB0076000976CE /* Feather.ttf */; };
-		F7DFED6C28EB0076000976CE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED5C28EB0076000976CE /* Entypo.ttf */; };
-		F7DFED6D28EB0076000976CE /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED5D28EB0076000976CE /* FontAwesome5_Brands.ttf */; };
-		F7DFED6E28EB0076000976CE /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED5E28EB0076000976CE /* MaterialCommunityIcons.ttf */; };
-		F7DFED6F28EB0076000976CE /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED5F28EB0076000976CE /* AntDesign.ttf */; };
-		F7DFED7028EB0076000976CE /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6028EB0076000976CE /* Foundation.ttf */; };
-		F7DFED7128EB0076000976CE /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6128EB0076000976CE /* Ionicons.ttf */; };
-		F7DFED7228EB0076000976CE /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6228EB0076000976CE /* FontAwesome5_Solid.ttf */; };
-		F7DFED7328EB0076000976CE /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6328EB0076000976CE /* FontAwesome5_Regular.ttf */; };
-		F7DFED7428EB0076000976CE /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6428EB0076000976CE /* FontAwesome.ttf */; };
-		F7DFED7528EB0076000976CE /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6528EB0076000976CE /* Zocial.ttf */; };
-		F7DFED7628EB0076000976CE /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6628EB0076000976CE /* EvilIcons.ttf */; };
-		F7DFED7728EB0076000976CE /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6728EB0076000976CE /* SimpleLineIcons.ttf */; };
-		F7DFED7828EB0076000976CE /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7DFED6828EB0076000976CE /* MaterialIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,19 +30,18 @@
 		00E356EE1AD99517003FC87E /* AltirPeerRewardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AltirPeerRewardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AltirPeerRewardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AltirPeerRewardsTests.m; sourceTree = "<group>"; };
+		02F7B27F9CC1BFB7714F8C5D /* Pods-AltirPeerRewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards.release.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards.release.xcconfig"; sourceTree = "<group>"; };
+		041A5130EA82BC167CC347FB /* Pods-AltirPeerRewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards.debug.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AltirPeerRewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltirPeerRewards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AltirPeerRewards/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = AltirPeerRewards/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AltirPeerRewards/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AltirPeerRewards/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AltirPeerRewards/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AltirPeerRewards-AltirPeerRewardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-AltirPeerRewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards.debug.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-AltirPeerRewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards.release.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-AltirPeerRewards.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AltirPeerRewards.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAB8743AD78C1E5019C307F /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AltirPeerRewards-AltirPeerRewardsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7152EBF4C78CF1C8F414D79D /* Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A9B9FCCBE69ABC6B77A742D /* Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AltirPeerRewards/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig"; path = "Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F7DFED5928EB0076000976CE /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		F7DFED5A28EB0076000976CE /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
@@ -76,6 +59,7 @@
 		F7DFED6628EB0076000976CE /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		F7DFED6728EB0076000976CE /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		F7DFED6828EB0076000976CE /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		F8FB3D880178BD97C0602B87 /* libPods-AltirPeerRewards.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AltirPeerRewards.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a in Frameworks */,
+				59C252D844A80F5ADCE1A4EA /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-AltirPeerRewards.a in Frameworks */,
+				49A03438F6EBBC56C05C0A97 /* libPods-AltirPeerRewards.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-AltirPeerRewards.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a */,
+				F8FB3D880178BD97C0602B87 /* libPods-AltirPeerRewards.a */,
+				2EAB8743AD78C1E5019C307F /* libPods-AltirPeerRewards-AltirPeerRewardsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,10 +157,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-AltirPeerRewards.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-AltirPeerRewards.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig */,
+				041A5130EA82BC167CC347FB /* Pods-AltirPeerRewards.debug.xcconfig */,
+				02F7B27F9CC1BFB7714F8C5D /* Pods-AltirPeerRewards.release.xcconfig */,
+				7152EBF4C78CF1C8F414D79D /* Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig */,
+				7A9B9FCCBE69ABC6B77A742D /* Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -212,12 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AltirPeerRewardsTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				6115561F8F184C3D034FD115 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				31035EA5E22CCA66E80DEBA0 /* [CP] Embed Pods Frameworks */,
+				984417F22F414B6535797CA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,14 +217,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AltirPeerRewards" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				9FA5E44C45E0CC5D7ED99B1C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				F21375AAFB97D8436EE70C6C /* [CP] Embed Pods Frameworks */,
+				17F7E9F1EA73D33A3074A941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,23 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DFED6928EB0076000976CE /* Fontisto.ttf in Resources */,
-				F7DFED7428EB0076000976CE /* FontAwesome.ttf in Resources */,
-				F7DFED7028EB0076000976CE /* Foundation.ttf in Resources */,
-				F7DFED7328EB0076000976CE /* FontAwesome5_Regular.ttf in Resources */,
-				F7DFED7128EB0076000976CE /* Ionicons.ttf in Resources */,
-				F7DFED7628EB0076000976CE /* EvilIcons.ttf in Resources */,
-				F7DFED6C28EB0076000976CE /* Entypo.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				F7DFED7528EB0076000976CE /* Zocial.ttf in Resources */,
-				F7DFED7728EB0076000976CE /* SimpleLineIcons.ttf in Resources */,
-				F7DFED6B28EB0076000976CE /* Feather.ttf in Resources */,
-				F7DFED6A28EB0076000976CE /* Octicons.ttf in Resources */,
-				F7DFED6D28EB0076000976CE /* FontAwesome5_Brands.ttf in Resources */,
-				F7DFED6F28EB0076000976CE /* AntDesign.ttf in Resources */,
-				F7DFED7828EB0076000976CE /* MaterialIcons.ttf in Resources */,
-				F7DFED7228EB0076000976CE /* FontAwesome5_Solid.ttf in Resources */,
-				F7DFED6E28EB0076000976CE /* MaterialCommunityIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,24 +307,41 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		17F7E9F1EA73D33A3074A941 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		31035EA5E22CCA66E80DEBA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6115561F8F184C3D034FD115 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,7 +363,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		984417F22F414B6535797CA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FA5E44C45E0CC5D7ED99B1C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -400,55 +402,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		F21375AAFB97D8436EE70C6C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards-AltirPeerRewardsTests/Pods-AltirPeerRewards-AltirPeerRewardsTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltirPeerRewards/Pods-AltirPeerRewards-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -503,7 +471,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig */;
+			baseConfigurationReference = 7152EBF4C78CF1C8F414D79D /* Pods-AltirPeerRewards-AltirPeerRewardsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -530,7 +498,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig */;
+			baseConfigurationReference = 7A9B9FCCBE69ABC6B77A742D /* Pods-AltirPeerRewards-AltirPeerRewardsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -554,7 +522,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AltirPeerRewards.debug.xcconfig */;
+			baseConfigurationReference = 041A5130EA82BC167CC347FB /* Pods-AltirPeerRewards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -580,7 +548,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AltirPeerRewards.release.xcconfig */;
+			baseConfigurationReference = 02F7B27F9CC1BFB7714F8C5D /* Pods-AltirPeerRewards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
