@@ -48,15 +48,15 @@ const GiveRewardForm = () => {
         user => user.displayName === recipient,
       )[0];
 
+      if (!rewardRecipient) {
+        setError('recipient', { message: 'Recipient does not exist' });
+        return;
+      }
+
       if (rewardRecipient.displayName === sender.displayName) {
         setError('recipient', {
           message: 'You can not give a reward to yourself',
         });
-        return;
-      }
-
-      if (!rewardRecipient) {
-        setError('recipient', { message: 'Recipient does not exist' });
         return;
       }
 
