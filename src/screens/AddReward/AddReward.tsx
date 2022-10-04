@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     position: 'relative',
-    backgroundColor: THEME.palette.secondary.dark,
+    backgroundColor: THEME.palette.background.dark,
     borderTopLeftRadius: THEME.spacing.lg,
     borderTopRightRadius: THEME.spacing.lg,
   },

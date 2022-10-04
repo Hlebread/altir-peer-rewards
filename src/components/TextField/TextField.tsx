@@ -1,5 +1,5 @@
-import { StyleSheet, TextInput, TextInputProps, View } from 'react-native';
 import React, { FC } from 'react';
+import { StyleSheet, TextInput, TextInputProps, View } from 'react-native';
 
 import { Typography } from '../Typography';
 import { THEME } from '../../constants';
@@ -48,7 +48,7 @@ const TextField: FC<TextFieldProps> = ({
         <TextInput
           style={styles.input}
           textAlignVertical="top"
-          placeholderTextColor={THEME.palette.primary.dark}
+          placeholderTextColor={THEME.palette.secondary.light}
           onChangeText={onTextChangeHandler}
           {...props}
         />
@@ -68,36 +68,36 @@ export default TextField;
 const styles = StyleSheet.create({
   container: {
     padding: THEME.spacing.sm,
-    borderRadius: 10,
   },
   label: {
+    color: THEME.palette.secondary.dark,
+    fontWeight: THEME.font.weight.bold,
     marginLeft: THEME.spacing.sm,
     marginBottom: THEME.spacing.sm,
-    fontWeight: THEME.font.weight.semibold,
   },
   labelError: {
-    color: THEME.palette.error,
+    color: THEME.palette.error.light,
   },
   inputContainer: {
     minHeight: 40,
-    borderRadius: 10,
     borderWidth: 2,
-    borderColor: THEME.palette.primary.main,
+    borderColor: THEME.palette.secondary.dark,
+    borderRadius: THEME.shape,
   },
   inputContainerError: {
-    borderColor: THEME.palette.error,
+    borderColor: THEME.palette.error.light,
   },
   input: {
     flex: 1,
     paddingHorizontal: THEME.spacing.sm,
-    color: THEME.palette.primary.dark,
+    color: THEME.palette.primary.light,
   },
   helperText: {
     marginLeft: THEME.spacing.sm,
     marginTop: THEME.spacing.sm,
   },
   helperTextError: {
-    color: THEME.palette.error,
+    color: THEME.palette.error.light,
   },
   fullWidth: {
     width: '100%',

@@ -1,28 +1,20 @@
-import { StyleSheet, Text, TextProps, View } from 'react-native';
 import React, { FC } from 'react';
+import { StyleSheet, Text, TextProps, View } from 'react-native';
+
 import { THEME } from '../../constants';
 
 export interface TypographyProps extends TextProps {
-  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-  error?: boolean;
+  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'subtitle1' | 'subtitle2';
 }
 
 const Typography: FC<TypographyProps> = ({
   children,
   variant,
-  error,
   style,
   ...props
 }) => (
   <View>
-    <Text
-      style={[
-        styles.text,
-        variant && styles[variant],
-        error && styles.error,
-        style,
-      ]}
-      {...props}>
+    <Text style={[styles.text, variant && styles[variant], style]} {...props}>
       {children}
     </Text>
   </View>
@@ -32,46 +24,45 @@ export default Typography;
 
 const styles = StyleSheet.create({
   text: {
+    color: THEME.palette.primary.contrastText,
+    fontSize: THEME.font.size.md,
+    fontWeight: THEME.font.weight.light,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: THEME.font.size.md,
-    color: THEME.palette.secondary.main,
-    fontWeight: THEME.font.weight.light,
   },
   h1: {
-    color: THEME.palette.secondary.dark,
+    fontSize: THEME.font.size.xl,
+    fontWeight: THEME.font.weight.extraBold,
+  },
+  h2: {
     fontSize: THEME.font.size.xl,
     fontWeight: THEME.font.weight.bold,
   },
-  h2: {
-    color: THEME.palette.secondary.dark,
-    fontSize: THEME.font.size.lg,
-    fontWeight: THEME.font.weight.semibold,
-  },
   h3: {
-    color: THEME.palette.secondary.dark,
-    fontSize: THEME.font.size.md,
+    fontSize: THEME.font.size.lg,
     fontWeight: THEME.font.weight.bold,
   },
   h4: {
-    color: THEME.palette.secondary.dark,
     fontSize: THEME.font.size.md,
-    fontWeight: THEME.font.weight.medium,
+    fontWeight: THEME.font.weight.semiBold,
   },
   h5: {
-    color: THEME.palette.secondary.dark,
     fontSize: THEME.font.size.md,
     fontWeight: THEME.font.weight.medium,
   },
   h6: {
-    color: THEME.palette.secondary.dark,
-    fontSize: THEME.font.size.md,
-    fontWeight: THEME.font.weight.semibold,
+    fontSize: THEME.font.size.sm,
+    fontWeight: THEME.font.weight.medium,
   },
-  error: {
-    color: THEME.palette.error,
+  subtitle1: {
+    color: THEME.palette.secondary.light,
     fontSize: THEME.font.size.md,
-    fontWeight: THEME.font.weight.regular,
+    fontWeight: THEME.font.weight.light,
+  },
+  subtitle2: {
+    color: THEME.palette.secondary.light,
+    fontSize: THEME.font.size.sm,
+    fontWeight: THEME.font.weight.light,
   },
 });

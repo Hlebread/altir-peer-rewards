@@ -1,5 +1,5 @@
-import { StyleSheet, View, ViewProps } from 'react-native';
 import React, { FC } from 'react';
+import { StyleSheet, View, ViewProps } from 'react-native';
 import Animated, {
   measure,
   runOnJS,
@@ -28,7 +28,7 @@ const Ripple: FC<RippleProps> = ({
   children,
   onTap,
   duration = 800,
-  opacity = 1,
+  opacity = 0.5,
   color = THEME.palette.common.black,
   style,
   ...props

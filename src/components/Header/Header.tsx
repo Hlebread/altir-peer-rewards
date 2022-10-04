@@ -27,16 +27,17 @@ const Header = () => {
         size={80}
       />
       <View style={styles.content}>
-        <Typography variant="h2" numberOfLines={1}>
+        <Typography variant="h3" numberOfLines={1}>
           {user?.displayName}
         </Typography>
         <View style={styles.contentText}>
           <Typography>Given </Typography>
-          <Typography variant="h6" numberOfLines={1} style={styles.amountText}>
+          <Typography variant="h4" numberOfLines={1} style={styles.amountText}>
             ${given}
           </Typography>
-          <Typography> / Recieved </Typography>
-          <Typography variant="h6" numberOfLines={1} style={styles.amountText}>
+          <Typography style={styles.separator}>/</Typography>
+          <Typography>Recieved </Typography>
+          <Typography variant="h4" numberOfLines={1} style={styles.amountText}>
             ${recieved}
           </Typography>
         </View>
@@ -70,5 +71,9 @@ const styles = StyleSheet.create({
   },
   amountText: {
     maxWidth: 70,
+    marginHorizontal: THEME.spacing.xs,
+  },
+  separator: {
+    marginHorizontal: THEME.spacing.sm,
   },
 });

@@ -79,7 +79,7 @@ const GiveRewardForm = () => {
   return (
     <View style={styles.container}>
       <Typography variant="h2" style={styles.title}>
-        Give Reward
+        Give reward
       </Typography>
 
       <View style={styles.inputContainer}>
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
-    color: THEME.palette.common.white,
+    color: THEME.palette.primary.light,
   },
   inputContainer: {
     marginVertical: THEME.spacing.xs,

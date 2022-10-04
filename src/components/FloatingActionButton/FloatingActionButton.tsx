@@ -1,8 +1,9 @@
-import { Platform, StyleSheet } from 'react-native';
 import React, { FC } from 'react';
+import { Platform, StyleSheet } from 'react-native';
+
+import { THEME } from '../../constants';
 
 import { Button, ButtonProps } from '../Button';
-import { THEME } from '../../constants';
 
 export interface FloatingActionButtonProps extends ButtonProps {}
 

@@ -1,27 +1,29 @@
-import { TextStyle } from 'react-native';
+import { Theme } from '../types';
 
-export const THEME = {
+export const THEME: Theme = {
   palette: {
     common: {
       white: '#fff',
       black: '#000',
     },
     primary: {
-      light: '#ffffff',
-      main: '#e4e2df',
-      dark: '#f5f1ee',
+      light: '#fff',
+      main: '#f5f1ee',
+      dark: '#e4e2df',
+      contrastText: '#000',
     },
     secondary: {
-      light: '#e4e2df',
-      main: 'gray',
-      dark: '#000000',
-    },
-    tertiary: {
-      light: '#b39e8a',
-      main: '#e4e2df',
+      light: '#808080',
+      main: '#b39e8a',
       dark: '#998673',
+      contrastText: '#000',
     },
-    error: '#e74c4c',
+    error: {
+      light: '#e74c4c',
+      main: '#d32f2f',
+      dark: '#c62828',
+      contrastText: '#fff',
+    },
     background: {
       light: '#fff',
       main: '#f5f1ee',
@@ -37,12 +39,16 @@ export const THEME = {
       xl: 20,
     },
     weight: {
+      thin: '100',
+      extraLight: '200',
       light: '300',
-      regular: '400',
+      normal: '400',
       medium: '500',
-      semibold: '700',
-      bold: '900',
-    } as { [key: string]: TextStyle['fontWeight'] },
+      semiBold: '600',
+      bold: '700',
+      extraBold: '800',
+      heavy: '900',
+    },
   },
   spacing: {
     xs: 3,

@@ -60,11 +60,11 @@ const styles = StyleSheet.create({
     padding: THEME.spacing.md,
     width: '100%',
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: THEME.shape,
     overflow: 'hidden',
   },
   title: {
-    color: THEME.palette.common.black,
+    color: THEME.palette.primary.contrastText,
     textTransform: 'uppercase',
   },
   ripple: {

@@ -16,6 +16,8 @@ import {
   TextStyle,
 } from 'react-native';
 
+import { THEME } from '../../constants';
+
 export interface AvatarProps extends PropsWithChildren {
   src?: ImageProps['source'];
   alt?: string;
@@ -50,8 +52,8 @@ const Avatar: FC<AvatarProps> = ({
   alt,
   variant = 'circular',
   size = 50,
-  color = '#fff',
-  bgcolor = '#3c3c3c',
+  color = THEME.palette.primary.light,
+  bgcolor = THEME.palette.secondary.light,
   imgProps,
 }) => {
   const [imageLoadError, setImageLoadError] = useState(false);

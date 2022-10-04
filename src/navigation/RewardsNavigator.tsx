@@ -12,7 +12,7 @@ import { FloatingActionButton } from '../components';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: THEME.palette.primary.dark,
+    backgroundColor: THEME.palette.background.main,
   },
   tabBarLabelStyle: {
     fontSize: THEME.spacing.md,
@@ -22,14 +22,14 @@ const styles = StyleSheet.create({
   tabBarStyle: {
     width: '100%',
     overflow: 'hidden',
-    borderTopLeftRadius: THEME.spacing.lg,
-    borderTopRightRadius: THEME.spacing.lg,
-    backgroundColor: THEME.palette.secondary.light,
+    borderTopLeftRadius: THEME.shape * 2,
+    borderTopRightRadius: THEME.shape * 2,
+    backgroundColor: THEME.palette.primary.dark,
     elevation: 0,
   },
   tabBarIndicatorStyle: {
     height: '100%',
-    backgroundColor: THEME.palette.primary.light,
+    backgroundColor: THEME.palette.background.light,
   },
   button: {
     position: 'absolute',
@@ -42,8 +42,8 @@ const screenOptions = {
   headerShown: false,
   tabBarLabelStyle: styles.tabBarLabelStyle,
   tabBarStyle: styles.tabBarStyle,
-  tabBarActiveTintColor: THEME.palette.tertiary.light,
-  tabBarInactiveTintColor: THEME.palette.secondary.dark,
+  tabBarActiveTintColor: THEME.palette.secondary.main,
+  tabBarInactiveTintColor: THEME.palette.secondary.contrastText,
   tabBarPressColor: THEME.palette.primary.light,
   tabBarIndicatorStyle: styles.tabBarIndicatorStyle,
 };
