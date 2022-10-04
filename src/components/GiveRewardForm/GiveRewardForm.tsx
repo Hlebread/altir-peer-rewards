@@ -56,7 +56,7 @@ const GiveRewardForm = () => {
       }
 
       if (!rewardRecipient) {
-        setError('message', { message: 'Recipient does not exist' });
+        setError('recipient', { message: 'Recipient does not exist' });
         return;
       }
 
