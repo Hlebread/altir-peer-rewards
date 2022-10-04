@@ -1,13 +1,23 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import GiveRewardForm from '../../components/GiveRewardForm/GiveRewardForm';
+import Icon from 'react-native-vector-icons/Ionicons';
+
+import { FloatingActionButton, GiveRewardForm } from '../../components';
 import { THEME } from '../../constants';
 
-const AddRewardScreen = () => (
-  <View style={styles.container}>
-    <GiveRewardForm />
-  </View>
-);
+const AddRewardScreen = () => {
+  const { goBack } = useNavigation();
+
+  return (
+    <View style={styles.container}>
+      <GiveRewardForm />
+      <FloatingActionButton onPress={goBack}>
+        <Icon name="close" size={20} />
+      </FloatingActionButton>
+    </View>
+  );
+};
 
 export default AddRewardScreen;
 
