@@ -1,4 +1,3 @@
-import { v4 as uuid } from 'uuid';
 import { User } from '../interfaces';
 
 export const USERS_MOCK: User[] = [

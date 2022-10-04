@@ -13,8 +13,8 @@ export const REWARDS_MOCK: Reward[] = [
   },
   {
     id: 'r2',
-    recipient: USERS_MOCK[0],
-    sender: USERS_MOCK[2],
+    recipient: USERS_MOCK[1],
+    sender: USERS_MOCK[0],
     amount: 100,
     dt: 1664835562000,
     message: 'Thanks for amazing songs!',

@@ -62,7 +62,11 @@ const RewardsNavigator = () => {
     <View style={styles.container}>
       <Tab.Navigator screenOptions={screenOptions}>
         <Tab.Screen name={AppRoutes.Feed} component={RewardsScreen} />
-        <Tab.Screen name={AppRoutes.MyRewards} component={RewardsScreen} />
+        <Tab.Screen
+          name={AppRoutes.MyRewards}
+          initialParams={{ onlyUsers: true }}
+          children={() => <RewardsScreen onlyUsers />}
+        />
       </Tab.Navigator>
       <FloatingActionButton onPress={navigateToAddRewardsScreen}>
         <Icon name="add-outline" size={20} />

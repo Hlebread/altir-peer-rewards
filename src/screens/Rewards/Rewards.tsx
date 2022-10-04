@@ -1,30 +1,25 @@
+import React, { FC } from 'react';
 import { StyleSheet, View } from 'react-native';
-import React, { useCallback } from 'react';
-import RewardsList from '../../components/RewardsList/RewardsList';
-import { useAppSelector } from '../../store';
-import { selectAllRewards } from '../../store/slices/rewards/selectors';
-import Icon from 'react-native-vector-icons/Ionicons';
 
-import { FloatingActionButton } from '../../components/FloatingActionButton';
-import { useNavigation } from '@react-navigation/native';
-import { AppRoutes } from '../../types';
+import { RewardsList } from '../../components';
+import { THEME } from '../../constants';
+import {
+  selectAllRewards,
+  selectUserRewards,
+  useAppSelector,
+} from '../../store';
 
-const RewardsScreen = () => {
-  const { navigate } = useNavigation();
+export interface RewardsScreenProps {
+  onlyUsers?: boolean;
+}
 
-  const rewardsData = useAppSelector(selectAllRewards);
-
-  const navigateToAddRewardsScreen = useCallback(
-    () => navigate(AppRoutes.AddReward as never),
-    [navigate],
-  );
+const RewardsScreen: FC<RewardsScreenProps> = ({ onlyUsers }) => {
+  const userRewards = useAppSelector(selectUserRewards);
+  const rewards = useAppSelector(selectAllRewards);
 
   return (
     <View style={styles.container}>
-      <RewardsList data={rewardsData} />
-      <FloatingActionButton onPress={navigateToAddRewardsScreen}>
-        <Icon name="add-outline" size={20} />
-      </FloatingActionButton>
+      <RewardsList data={onlyUsers ? userRewards : rewards} />
     </View>
   );
 };
@@ -34,5 +29,6 @@ export default RewardsScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: THEME.palette.background.light,
   },
 });

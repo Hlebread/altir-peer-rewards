@@ -10,7 +10,8 @@ export const selectAllRewards = createSelector(
 
 export const selectUserRewards = createSelector(selectSelf, state =>
   state.rewards.rewards.filter(
-    item => item.recipient.id === state.authentication.user?.id,
+    item =>
+      item.recipient.displayName === state.authentication.user?.displayName,
   ),
 );
 
