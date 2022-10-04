@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   h2: {
     color: THEME.palette.secondary.dark,
     fontSize: THEME.font.size.lg,
-    fontWeight: THEME.font.weight.bold,
+    fontWeight: THEME.font.weight.semibold,
   },
   h3: {
     color: THEME.palette.secondary.dark,
