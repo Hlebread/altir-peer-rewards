@@ -2,9 +2,16 @@
 
 Application that allows employees to receive and assign awards
 
+## Demo
+
+https://user-images.githubusercontent.com/78379892/194177917-77837b1e-2e1b-49a3-aa7a-b92c34189ce2.mov
+
+https://user-images.githubusercontent.com/78379892/194178307-65747244-5196-4af0-8a02-2b8c295a3fcf.mov
+
 ## Table of Contents
 
 - [Altir Peer Rewards](#altir-peer-rewards)
+  - [Demo](#demo)
   - [Table of Contents](#table-of-contents)
   - [Local Installation](#local-installation)
     - [1. Set up the development environment 🌳](#1-set-up-the-development-environment-)
@@ -132,9 +139,6 @@ pod deintegrate && pod install
 ```
 
 ## 🤝 Contact with me
-
-https://user-images.githubusercontent.com/78379892/194177917-77837b1e-2e1b-49a3-aa7a-b92c34189ce2.mov
-https://user-images.githubusercontent.com/78379892/194178307-65747244-5196-4af0-8a02-2b8c295a3fcf.mov
 
 <p>
   <a href="https://www.linkedin.com/in/gleb-makhankov/" rel="nofollow noreferrer">
