@@ -4,9 +4,9 @@ Application that allows employees to receive and assign awards
 
 ## Demo
 
-https://user-images.githubusercontent.com/78379892/194177917-77837b1e-2e1b-49a3-aa7a-b92c34189ce2.mov
+https://user-images.githubusercontent.com/78379892/194178993-00575791-bb33-4bbc-a4dd-eff65834b117.mov
 
-https://user-images.githubusercontent.com/78379892/194178307-65747244-5196-4af0-8a02-2b8c295a3fcf.mov
+https://user-images.githubusercontent.com/78379892/194179015-6ad49ad7-ca88-4ac0-abbc-3ead3ee257ad.mov
 
 ## Table of Contents
 
