@@ -13,7 +13,7 @@ const AddRewardScreen = () => {
     <View style={styles.container}>
       <GiveRewardForm />
       <FloatingActionButton onPress={goBack}>
-        <Icon name="close" size={20} />
+        <Icon name="close" size={40} />
       </FloatingActionButton>
     </View>
   );

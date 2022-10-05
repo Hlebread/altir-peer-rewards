@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { THEME } from '../../constants';
 
@@ -24,14 +24,15 @@ export default FloatingActionButton;
 const styles = StyleSheet.create({
   fab: {
     position: 'absolute',
-    width: 70,
+    width: 60,
     height: 50,
     right: THEME.spacing.lg,
-    bottom: Platform.OS === 'ios' ? THEME.spacing.lg * 2 : THEME.spacing.lg,
+    bottom: THEME.spacing.lg,
     backgroundColor: THEME.palette.background.dark,
     borderRadius: 100,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 0,
   },
   title: {
     color: THEME.palette.primary.light,

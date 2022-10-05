@@ -17,7 +17,7 @@ const RewardItem: FC<RewardItemProps> = ({ data }) => {
 
   return (
     <View style={styles.container}>
-      <Avatar alt={sender?.displayName} src={{ uri: sender?.imgUrl }} />
+      <Avatar alt={recipient?.displayName} src={{ uri: recipient?.imgUrl }} />
       <View style={styles.content}>
         <Typography variant="h5" numberOfLines={4}>
           {message}
@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingHorizontal: THEME.spacing.sm,
     paddingRight: THEME.spacing.lg,
-    margin: THEME.spacing.lg,
+    marginHorizontal: THEME.spacing.lg,
+    marginVertical: THEME.spacing.md,
   },
   content: {
     marginHorizontal: THEME.spacing.md,

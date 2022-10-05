@@ -3,6 +3,7 @@ export * from './Button';
 export * from './FloatingActionButton';
 export * from './GiveRewardForm';
 export * from './Header';
+export * from './MainLayout';
 export * from './RewardsList';
 export * from './Ripple';
 export * from './TextField';

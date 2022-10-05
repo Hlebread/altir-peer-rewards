@@ -4,22 +4,21 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import { FloatingActionButton } from '../components';
+import { THEME } from '../constants';
 import { RewardsScreen } from '../screens';
 import { AppRoutes } from '../types';
-import { THEME } from '../constants';
-import { FloatingActionButton } from '../components';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: THEME.palette.background.main,
   },
-  tabBarLabelStyle: {
+  tabBarLabel: {
     fontSize: THEME.spacing.md,
     textTransform: 'capitalize',
     fontWeight: THEME.font.weight.medium,
   },
-  tabBarStyle: {
+  tabBar: {
     width: '100%',
     overflow: 'hidden',
     borderTopLeftRadius: THEME.shape * 2,
@@ -27,25 +26,20 @@ const styles = StyleSheet.create({
     backgroundColor: THEME.palette.primary.dark,
     elevation: 0,
   },
-  tabBarIndicatorStyle: {
+  tabBarIndicator: {
     height: '100%',
     backgroundColor: THEME.palette.background.light,
-  },
-  button: {
-    position: 'absolute',
-    bottom: THEME.spacing.lg,
-    right: THEME.spacing.lg,
   },
 });
 
 const screenOptions = {
   headerShown: false,
-  tabBarLabelStyle: styles.tabBarLabelStyle,
-  tabBarStyle: styles.tabBarStyle,
+  tabBarLabelStyle: styles.tabBarLabel,
+  tabBarStyle: styles.tabBar,
   tabBarActiveTintColor: THEME.palette.secondary.main,
   tabBarInactiveTintColor: THEME.palette.secondary.contrastText,
   tabBarPressColor: THEME.palette.primary.light,
-  tabBarIndicatorStyle: styles.tabBarIndicatorStyle,
+  tabBarIndicatorStyle: styles.tabBarIndicator,
 };
 
 const Tab = createMaterialTopTabNavigator();
@@ -69,7 +63,7 @@ const RewardsNavigator = () => {
         />
       </Tab.Navigator>
       <FloatingActionButton onPress={navigateToAddRewardsScreen}>
-        <Icon name="add-outline" size={20} />
+        <Icon color="#fff" name="add-outline" size={40} />
       </FloatingActionButton>
     </View>
   );

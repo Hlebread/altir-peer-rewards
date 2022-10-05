@@ -54,8 +54,7 @@ const styles = StyleSheet.create({
     padding: THEME.spacing.lg,
     paddingVertical: THEME.spacing.lg,
     backgroundColor: THEME.palette.background.main,
-    paddingTop:
-      Platform.OS === 'ios' ? THEME.spacing.lg + 40 : THEME.spacing.lg,
+    paddingTop: Platform.OS === 'ios' ? THEME.spacing.sm : THEME.spacing.lg,
   },
   avatar: {
     width: 100,

@@ -88,6 +88,7 @@ const GiveRewardForm = () => {
           name="recipient"
           render={({ field: { onChange, value } }) => (
             <TextField
+              autoFocus
               value={value}
               onChangeText={onChange}
               error={!!errors.recipient}
