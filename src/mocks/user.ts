@@ -25,4 +25,11 @@ export const USERS_MOCK: User[] = [
     imgUrl:
       'https://www.novochag.ru/upload/img_cache/f9f/f9fdac8bab8c38c72644f9d5c5f4f526_cropped_666x932.jpg',
   },
+  {
+    id: '',
+    firstName: 'Errol',
+    lastName: 'Flynn',
+    displayName: 'Errol Flynn',
+    imgUrl: 'https://flxt.tmsimg.com/assets/20139_v9_ba.jp',
+  },
 ];

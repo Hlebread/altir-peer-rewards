@@ -4,9 +4,17 @@ import { USERS_MOCK } from './user';
 
 export const REWARDS_MOCK: Reward[] = [
   {
-    id: 'r1',
+    id: 'r0',
     recipient: USERS_MOCK[0],
     sender: USERS_MOCK[1],
+    amount: 145,
+    dt: Date.now(),
+    message: 'Thanks for amazing songs!',
+  },
+  {
+    id: 'r1',
+    recipient: USERS_MOCK[0],
+    sender: USERS_MOCK[3],
     amount: 145,
     dt: Date.now(),
     message: 'Thanks for amazing songs!',
@@ -25,7 +33,8 @@ export const REWARDS_MOCK: Reward[] = [
     sender: USERS_MOCK[2],
     amount: 100,
     dt: 1664795962000,
-    message: 'Thanks for amazing songs!',
+    message:
+      'Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs!',
   },
   {
     id: 'r4',
@@ -49,6 +58,7 @@ export const REWARDS_MOCK: Reward[] = [
     sender: USERS_MOCK[1],
     amount: 100,
     dt: 1656890362000,
-    message: 'Thanks for amazing songs!',
+    message:
+      'Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs!',
   },
 ];

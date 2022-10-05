@@ -24,7 +24,7 @@ export default FloatingActionButton;
 const styles = StyleSheet.create({
   fab: {
     position: 'absolute',
-    width: 50,
+    width: 70,
     height: 50,
     right: THEME.spacing.lg,
     bottom: Platform.OS === 'ios' ? THEME.spacing.lg * 2 : THEME.spacing.lg,

@@ -94,7 +94,7 @@ const Avatar: FC<AvatarProps> = ({
 
   return (
     <View style={[styles.container, calculatedContainerStyles]}>
-      {src && (
+      {mode === 'image' && (
         <Image
           source={src}
           onError={onError}

@@ -34,6 +34,6 @@ export default RewardsList;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: THEME.palette.background.light,
-    paddingBottom: THEME.spacing.lg * 2,
+    paddingBottom: THEME.spacing.lg * 3,
   },
 });
