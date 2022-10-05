@@ -133,6 +133,9 @@ pod deintegrate && pod install
 
 ## 🤝 Contact with me
 
+https://user-images.githubusercontent.com/78379892/194177917-77837b1e-2e1b-49a3-aa7a-b92c34189ce2.mov
+https://user-images.githubusercontent.com/78379892/194178307-65747244-5196-4af0-8a02-2b8c295a3fcf.mov
+
 <p>
   <a href="https://www.linkedin.com/in/gleb-makhankov/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
