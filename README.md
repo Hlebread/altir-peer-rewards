@@ -1,10 +1,10 @@
-# React Native Template
+# Altir Peer Rewards
 
-This template for React Native contains basic settings for the **editor**, **Eslint**, **Prettier**, **Commit-Lint**, **Husky**, **Lint-Staged** and a set of **npm scripts** to speed up the development process and use a single style of coding and writing commits.
+Application that allows employees to receive and assign awards
 
 ## Table of Contents
 
-- [React Native Template](#react-native-template)
+- [Altir Peer Rewards](#altir-peer-rewards)
   - [Table of Contents](#table-of-contents)
   - [Local Installation](#local-installation)
     - [1. Set up the development environment 🌳](#1-set-up-the-development-environment-)
@@ -17,6 +17,9 @@ This template for React Native contains basic settings for the **editor**, **Esl
       - [1. Start Metro bundler](#1-start-metro-bundler)
       - [2. Start application](#2-start-application)
     - [Release 🏗️](#release-️)
+  - [Troubleshooting](#troubleshooting)
+    - [Android](#android)
+    - [iOS](#ios)
   - [🤝 Contact with me](#-contact-with-me)
 
 ## Local Installation
@@ -24,6 +27,11 @@ This template for React Native contains basic settings for the **editor**, **Esl
 ### 1. Set up the development environment 🌳
 
 To set up your development environment, follow the instructions from the official React Native [**documentation**](https://reactnative.dev/docs/environment-setup).
+
+> The application was developed on the following emulators:
+>
+> - 🤖 **Android** - Pixel 3a (5.6", 1080x2220, 440dpi), Android 12 S (Tiramisu, API 31)
+> -  **iOS** - iPhone 13 Pro (15.5)
 
 ### 2. Clone repository ♊
 
@@ -47,10 +55,10 @@ Install the package manager [**yarn**](https://yarnpkg.com/getting-started/insta
 yarn
 ```
 
-Run form project root directory
+Run from **`ios`** directory
 
 ```bash
-cd ios && pod repo update && pod install && pod update && cd ..
+pod install
 ```
 
 #### 3.2 Run prepare scripts
@@ -91,6 +99,37 @@ yarn android
 
 - Official React Native Android release [**documentation**](https://reactnative.dev/docs/signed-apk-android)
 - Official React Native iOS release [**documentation**](https://reactnative.dev/docs/publishing-to-app-store)
+
+## Troubleshooting
+
+### Android
+
+If the following error occurs during the installation of the build on the emulator
+
+```bash
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+```
+
+Most likely the emulator is out of memory.
+
+To fix it, go to **Android Studio** &rarr; **Device Manager** &rarr; **Virtual Device Configuration** &rarr; click **Show Andvaced Settings** &rarr; **Memory and Storage** section &rarr; set following values:
+
+- RAM: 6144 Mb
+- VM heap: 1024 Mb
+- Internal Storage: 2048 Mb
+
+This should be enough to successfully install the application on the emulator.
+
+### iOS
+
+If you face any errors during build step, try to clean build folder in Xcode and run build again.
+
+If it doesn't work, try to reinstall **`pods`**.
+Run from **`ios`** folder:
+
+```bash
+pod deintegrate && pod install
+```
 
 ## 🤝 Contact with me
 
