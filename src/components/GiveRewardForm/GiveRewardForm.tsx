@@ -63,7 +63,7 @@ const GiveRewardForm = () => {
       }
 
       const newRewardEntry: Reward = {
-        id: Date.now().toString(),
+        id: '',
         sender,
         recipient: rewardRecipient,
         amount,

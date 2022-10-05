@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { v4 as uuid } from 'uuid';
 
 import { Reward } from '../../../interfaces';
 import { REWARDS_MOCK } from '../../../mocks';
@@ -16,7 +17,12 @@ export const rewardsSlice = createSlice({
   initialState,
   reducers: {
     addReward(state, { payload }: PayloadAction<Reward>) {
-      state.rewards.push(payload);
+      const newReward: Reward = {
+        ...payload,
+        id: uuid(),
+      };
+
+      state.rewards.push(newReward);
     },
   },
 });

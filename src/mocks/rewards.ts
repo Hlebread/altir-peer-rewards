@@ -1,10 +1,12 @@
+import { v4 as uuid } from 'uuid';
+
 import { Reward } from '../interfaces';
 
 import { USERS_MOCK } from './user';
 
 export const REWARDS_MOCK: Reward[] = [
   {
-    id: 'r0',
+    id: uuid(),
     recipient: USERS_MOCK[0],
     sender: USERS_MOCK[1],
     amount: 237,
@@ -12,7 +14,7 @@ export const REWARDS_MOCK: Reward[] = [
     message: 'Thanks for amazing songs!',
   },
   {
-    id: 'r1',
+    id: uuid(),
     recipient: USERS_MOCK[3],
     sender: USERS_MOCK[0],
     amount: 145,
@@ -20,7 +22,7 @@ export const REWARDS_MOCK: Reward[] = [
     message: 'Thanks for amazing songs!',
   },
   {
-    id: 'r2',
+    id: uuid(),
     recipient: USERS_MOCK[1],
     sender: USERS_MOCK[0],
     amount: 100,
@@ -28,7 +30,7 @@ export const REWARDS_MOCK: Reward[] = [
     message: 'Thanks for amazing songs!',
   },
   {
-    id: 'r3',
+    id: uuid(),
     recipient: USERS_MOCK[0],
     sender: USERS_MOCK[2],
     amount: 100,
@@ -37,7 +39,7 @@ export const REWARDS_MOCK: Reward[] = [
       'Thanks for amazing songs! Thanks for amazing songs! Thanks for amazing songs!',
   },
   {
-    id: 'r4',
+    id: uuid(),
     recipient: USERS_MOCK[1],
     sender: USERS_MOCK[2],
     amount: 100,
@@ -45,7 +47,7 @@ export const REWARDS_MOCK: Reward[] = [
     message: 'Thanks for amazing songs!',
   },
   {
-    id: 'r5',
+    id: uuid(),
     recipient: USERS_MOCK[0],
     sender: USERS_MOCK[1],
     amount: 100,
@@ -53,7 +55,7 @@ export const REWARDS_MOCK: Reward[] = [
     message: 'Thanks for amazing songs!',
   },
   {
-    id: 'r6',
+    id: uuid(),
     recipient: USERS_MOCK[2],
     sender: USERS_MOCK[1],
     amount: 100,

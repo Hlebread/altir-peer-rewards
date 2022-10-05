@@ -10,15 +10,14 @@ export const selectAllRewards = createSelector(
 
 export const selectUserRewards = createSelector(selectSelf, state =>
   state.rewards.rewards.filter(
-    item =>
-      item.recipient.displayName === state.authentication.user?.displayName,
+    item => item.recipient.id === state.authentication.user?.id,
   ),
 );
 
 export const selectGivenAmount = createSelector(selectSelf, state =>
   state.rewards.rewards.reduce(
     (accumulator, current) =>
-      current.sender.displayName === state.authentication.user?.displayName
+      current.sender.id === state.authentication.user?.id
         ? accumulator + current.amount
         : accumulator,
     0,
@@ -28,7 +27,7 @@ export const selectGivenAmount = createSelector(selectSelf, state =>
 export const selectRecievedAmount = createSelector(selectSelf, state =>
   state.rewards.rewards.reduce(
     (accumulator, current) =>
-      current.recipient.displayName === state.authentication.user?.displayName
+      current.recipient.id === state.authentication.user?.id
         ? accumulator + current.amount
         : accumulator,
     0,

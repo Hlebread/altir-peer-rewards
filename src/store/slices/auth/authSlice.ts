@@ -5,12 +5,10 @@ import { USERS_MOCK } from '../../../mocks';
 
 interface AuthSliceInitialState {
   user: User | null;
-  token: string | null;
 }
 
 const initialState: AuthSliceInitialState = {
   user: USERS_MOCK[0],
-  token: null,
 };
 
 export const authSlice = createSlice({
