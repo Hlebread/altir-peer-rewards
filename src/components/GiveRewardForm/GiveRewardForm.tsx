@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useNavigation } from '@react-navigation/native';
+import { KeyboardAwareScrollView } from '@codler/react-native-keyboard-aware-scroll-view';
 
 import { THEME } from '../../constants';
 import { giveRewardFormValidationSchema } from '../../validations';
@@ -29,6 +30,7 @@ const GiveRewardForm = () => {
   const dispatch = useAppDispatch();
   const sender = useAppSelector(selectUser) as User;
   const users = useAppSelector(selectAllUsers);
+
   const { goBack } = useNavigation();
 
   const {
@@ -77,7 +79,7 @@ const GiveRewardForm = () => {
   );
 
   return (
-    <View style={styles.container}>
+    <KeyboardAwareScrollView style={styles.container}>
       <Typography variant="h2" style={styles.title}>
         Give reward
       </Typography>
@@ -134,6 +136,7 @@ const GiveRewardForm = () => {
               helperText={errors.message?.message}
               label="Message"
               placeholder="Type your message..."
+              textAlignVertical="top"
               style={styles.messageInput}
             />
           )}
@@ -143,7 +146,7 @@ const GiveRewardForm = () => {
       <View style={styles.buttonContainer}>
         <Button onPress={handleSubmit(onSubmit)}>Give</Button>
       </View>
-    </View>
+    </KeyboardAwareScrollView>
   );
 };
 

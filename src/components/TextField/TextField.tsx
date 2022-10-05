@@ -47,7 +47,6 @@ const TextField: FC<TextFieldProps> = ({
         ]}>
         <TextInput
           style={styles.input}
-          textAlignVertical="top"
           placeholderTextColor={THEME.palette.secondary.light}
           onChangeText={onTextChangeHandler}
           {...props}
